@@ -1,0 +1,2 @@
+#!/bin/sh
+exec "${SSH_DESK_PYTHON:-python3}" "$(dirname "$0")/ssh_desk.py" --askpass "$1"

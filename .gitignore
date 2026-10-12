@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+*.vault
+known_hosts
+*.sock
+*.auth
+*.ctl
+*.stop
+*.bak*
+dist/
+build/

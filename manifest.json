@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "sergiojustiniano.ssh-desk",
+  "name": "SSH Desk",
+  "version": "0.1.0",
+  "author": "Sergio Justiniano",
+  "license": "MIT",
+  "description": "A retro SSH connection manager with encrypted profiles, session telemetry and automatic reconnects.",
+  "kinds": ["bar-widget"],
+  "entryPoints": { "barWidget": "BarWidget.qml" },
+  "barWidget": {
+    "displayName": "SSH Desk",
+    "category": "Developer Tools",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  }
+}
