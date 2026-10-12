@@ -12,14 +12,14 @@ Use at least 48 columns by 24 rows (80+ columns shows more telemetry).
 
 ## Omarchy plugin
 
-Plugin ID: `sergiojustiniano.ssh-desk`. It adds a small **>_** button to the right
+Plugin ID: `io.github.sjmaquina.ssh-desk`. It adds a small **>_** button to the right
 side of the bar. Click it to open the SSH Desk terminal UI. The master password
 and credentials stay in the Python application; the bar widget only launches it.
 
-After this repository is published, install it using its public GitHub URL:
+Install from the public GitHub repository once published:
 
 ```sh
-omarchy plugin add <public-github-repository-url> --enable
+omarchy plugin add https://github.com/sjmaquina/ssh-desk.git --enable
 ```
 
 No separate installer is needed for the plugin: Python, the askpass helper, and
@@ -31,14 +31,14 @@ SSH Desk installs no services and downloads no additional code at runtime.
 Move or disable the launcher:
 
 ```sh
-omarchy bar move sergiojustiniano.ssh-desk --section right
-omarchy plugin disable sergiojustiniano.ssh-desk
+omarchy bar move io.github.sjmaquina.ssh-desk --section right
+omarchy plugin disable io.github.sjmaquina.ssh-desk
 ```
 
 Close the manager and SSH session windows before updating or removing the plugin:
 
 ```sh
-omarchy plugin remove sergiojustiniano.ssh-desk
+omarchy plugin remove io.github.sjmaquina.ssh-desk
 ```
 
 Removal deletes the plugin code. Your encrypted vault and saved host keys remain
@@ -208,3 +208,20 @@ still require desktop testing.
 
 See [CHANGELOG.md](CHANGELOG.md) for release notes and [SECURITY.md](SECURITY.md)
 for vulnerability reporting and security limitations.
+
+## Publishing (maintainer)
+
+The repository destination is `sjmaquina/ssh-desk`, with plugin ID
+`io.github.sjmaquina.ssh-desk`. After reviewing the committed source and testing
+on the desktop, publish from a normal terminal with GitHub CLI authenticated:
+
+```sh
+gh auth login
+./publish.sh
+```
+
+The script creates the public repository if needed, pushes `main` without force,
+and submits [the prepared listing](MARKETPLACE_SUBMISSION.md) to the Omarchy
+marketplace. It preserves an existing private repository, refuses an unrelated
+`origin`, and checks for an existing submission before creating another issue.
+Maintainer approval determines whether the marketplace lists the plugin.

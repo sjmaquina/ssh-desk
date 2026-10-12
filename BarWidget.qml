@@ -4,7 +4,7 @@ import qs.Ui as Ui
 
 Ui.BarWidget {
     id: root
-    moduleName: "sergiojustiniano.ssh-desk"
+    moduleName: "io.github.sjmaquina.ssh-desk"
 
     implicitWidth: button.implicitWidth
     implicitHeight: button.implicitHeight

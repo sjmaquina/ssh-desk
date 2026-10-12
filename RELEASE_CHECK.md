@@ -41,7 +41,8 @@
 
 ## Before a public release
 
-- Publish the source in a public GitHub repository; the destination is pending.
+- Publish the source to https://github.com/sjmaquina/ssh-desk.
+  The destination is set; uploading remains blocked by this session's network access.
   The MIT license is now set, with Sergio Justiniano as copyright holder.
 - The Omarchy manifest and QML bar launcher pass local validation, including
   qmllint with the installed Quattro imports. Test the launcher on the live bar

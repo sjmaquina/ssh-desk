@@ -1,23 +1,16 @@
-# Omarchy marketplace submission draft
+### Repository URL
 
-Target: https://github.com/omacom/omarchy-plugin-marketplace/issues/new?template=submit-plugin.yml
+https://github.com/sjmaquina/ssh-desk
 
-Title: **[Plugin]: SSH Desk**
-
-## Repository URL
-
-Pending the public GitHub repository destination. This field must be replaced
-with the real repository URL before submission.
-
-## Category
+### Category
 
 Developer Tools
 
-## Tags
+### Tags
 
 Bar, Launcher, Security
 
-## Maintainer notes
+### Maintainer notes
 
 SSH Desk is an MIT-licensed Omarchy Quattro bar plugin that launches a retro
 terminal SSH connection manager. The repository root contains manifest.json
@@ -41,14 +34,12 @@ removing the code. Installation/removal and dependencies are documented in READM
 
 Manifest validation and qmllint pass locally. The Python suite has 24 passing
 results across the sandbox and the author's desktop, including a real socket
-handoff test. Listing approval is not represented as a security audit.
+handoff test. Live bar launch and SSH authentication still need desktop verification. Listing approval is not represented as a security audit.
 
-## Submission checklist
+### Submission checklist
 
 - [ ] The repository is public and contains installation and removal instructions.
 - [x] I have documented the plugin license and any external dependencies.
 - [x] I confirm that I own or have permission to submit this plugin and its preview assets.
 - [x] The plugin does not overwrite user configuration without explicit consent.
 - [x] I understand that approval is for listing and is not a security review.
-
-The public-repository checkbox must remain unchecked until the repository exists.
