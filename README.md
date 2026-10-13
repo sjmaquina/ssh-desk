@@ -209,19 +209,4 @@ still require desktop testing.
 See [CHANGELOG.md](CHANGELOG.md) for release notes and [SECURITY.md](SECURITY.md)
 for vulnerability reporting and security limitations.
 
-## Publishing (maintainer)
 
-The repository destination is `sjmaquina/ssh-desk`, with plugin ID
-`io.github.sjmaquina.ssh-desk`. After reviewing the committed source and testing
-on the desktop, publish from a normal terminal with GitHub CLI authenticated:
-
-```sh
-gh auth login
-./publish.sh
-```
-
-The script creates the public repository if needed, pushes `main` without force,
-and submits [the prepared listing](MARKETPLACE_SUBMISSION.md) to the Omarchy
-marketplace. It preserves an existing private repository, refuses an unrelated
-`origin`, and checks for an existing submission before creating another issue.
-Maintainer approval determines whether the marketplace lists the plugin.
